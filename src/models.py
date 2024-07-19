@@ -27,7 +27,7 @@ class Character(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50), nullable=False)
     height = Column(Integer, nullable=False)
-    gender = Column(String(20), nullable=False)
+    gender = Column(String(50), nullable=False)
     created = Column(DateTime, nullable=False)
     url = Column(String(250), nullable=False)
     favorites_characters = relationship('FavoriteCharacter', back_populates='character')
